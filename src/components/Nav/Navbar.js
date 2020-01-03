@@ -2,10 +2,11 @@ import React, { lazy } from 'react'
 // import { Router, Link } from 'react-router-dom'
 import styled from 'styled-components'
 import About from '../About/About'
-import Home from '../About/About'
+import Home from '../Home/Home'
 import FAQ from '../FAQ/FAQ'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-// const About = lazy(() => import('../About/About'))
+import Signup from '../Signup/Signup'
+import Login from '../Login/Login'
 
 const Navbar = () => {
   return (
@@ -33,7 +34,13 @@ const Navbar = () => {
               <Link to='/about'>About</Link>
             </li>
             <li>
-              <Link to='/users'>Users</Link>
+              <Link to='/users'>FAQ</Link>
+            </li>
+            <li>
+              <Link to='/login'>Login</Link>
+            </li>
+            <li>
+              <Link to='/signup'>Signup</Link>
             </li>
           </ul>
         </nav>
@@ -44,7 +51,13 @@ const Navbar = () => {
           <Route path='/about'>
             <About />
           </Route>
-          <Route path='/users'>
+          <Route path='/Signup'>
+            <Signup />
+          </Route>
+          <Route path='/Login'>
+            <Login />
+          </Route>
+          <Route path='/FAQ'>
             <FAQ />
           </Route>
           <Route path='/'>
