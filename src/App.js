@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <Navbar />
-        <About />
+        {/* <About /> */}
         <h1>Smoke Safe</h1>
       </header>
     </div>
